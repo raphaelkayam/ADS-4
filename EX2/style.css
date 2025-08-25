@@ -1,0 +1,43 @@
+body { 
+  font-family: system-ui, Arial, sans-serif; 
+  max-width: 620px; 
+  margin: 32px auto; 
+  line-height: 1.5; 
+  color: #4c10c5;
+}
+fieldset { 
+  border: 1px solid #4c10c5; 
+  border-radius: 8px; 
+  padding: 16px; 
+}
+label { 
+  display: block; 
+  margin: 8px 0 4px; 
+  color: #4c10c5;
+}
+input, select, button { 
+  padding: 8px; 
+  font-size: 16px; 
+  color: #4c10c5;
+}
+.row { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 12px; 
+}
+.actions { 
+  margin-top: 12px; 
+  display: flex; 
+  gap: 12px; 
+}
+#resultado { 
+  margin-top: 16px; 
+  padding: 12px; 
+  background: #e0e0e0; 
+  border-radius: 8px; 
+  white-space: pre-wrap; 
+}
+.erro { 
+  color: #ff0000; 
+  font-weight: 600; 
+}

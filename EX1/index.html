@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 1</title>
+</head>
+<body>
+    <h1 id="nome"></h1>
+    <h3 id="idade"></h3>
+
+    <script>
+        const nome = prompt('Digite seu nome completo:');
+        const idade = prompt('Digite sua idade:');
+
+        if (!nome || !idade || Number.isInteger(idade)) {
+            // console.log('Entrada inválida; Recarregue a pagina.');
+            document.getElementById('nome').textContent = 'Entrada inválida. Recarregue a pagina.';
+        } else {
+            // console.log(`Meu nome é ${nome}, tenho ${idade}` anos);
+            document.getElementById('nome').textContent = `Olá, meu nome é ${nome.trim()} e eu tenho ${idade} anos`;
+        }
+    </script>
+</body>
+</html>

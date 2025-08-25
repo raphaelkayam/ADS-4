@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ex2 - Operações Aritméticas</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>Ex2 — Calculadora de Operações</h1>
+
+  <fieldset>
+    <legend>Entradas</legend>
+    <div class="row">
+      <div>
+        <label for="numeroA">Número A</label>
+        <input id="numeroA" type="number" step="any" placeholder="Ex.: 12.5" />
+      </div>
+      <div>
+        <label for="numeroB">Número B</label>
+        <input id="numeroB" type="number" step="any" placeholder="Ex.: 3" />
+      </div>
+    </div>
+
+    <label for="operacao" style="margin-top:10px;">Operação</label>
+    <select id="operacao">
+      <option value="todas">Todas</option>
+      <option value="soma">Soma (+)</option>
+      <option value="sub">Subtração (−)</option>
+      <option value="mul">Multiplicação (×)</option>
+      <option value="div">Divisão (÷)</option>
+      <option value="mod">Resto (%)</option>
+    </select>
+
+    <div class="actions">
+      <button id="calcular">Calcular</button>
+      <button id="limpar" type="button">Limpar</button>
+    </div>
+  </fieldset>
+
+  <h3>Resultado</h3>
+  <div id="resultado">Preencha os números e selecione a operação.</div>
+
+  <script src="index.js"></script>
+</body>
+</html>
